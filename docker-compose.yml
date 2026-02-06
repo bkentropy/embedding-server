@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8111:8001"
+      - "8111:8111"
     restart: unless-stopped
     environment:
       - PYTHONUNBUFFERED=1

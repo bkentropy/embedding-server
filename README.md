@@ -32,7 +32,7 @@ curl -X POST localhost:8111/embed --json @example.json
 
 2. Run the container:
    ```bash
-   docker run -d -p 8111:8001 --name embedding-service embedding-service
+   docker run -d -p 8111:8111 --name embedding-service embedding-service
    ```
 
 ### Or with docker-compose
@@ -55,10 +55,10 @@ docker compose up -d
 
 3. Run the service:
    ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+   uvicorn main:app --host 0.0.0.0 --port 8111 --reload
    ```
 
-The service will be available at `http://localhost:8001`
+The service will be available at `http://localhost:8111`
 
 ## Nomad Deployment
 
@@ -87,4 +87,4 @@ The service will be available at `http://localhost:8001`
    nomad stop embedding-service
    ```
 
-The service will be available through Nomad's service discovery at the configured port 8001.
+The service will be available through Nomad's service discovery at the configured port 8111.

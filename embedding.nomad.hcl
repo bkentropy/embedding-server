@@ -7,8 +7,8 @@ job "embedding-service" {
 
     network {
       port "http" {
-        static = 8001
-        to = 8001
+        static = 8111
+        to = 8111
       }
     }
 
