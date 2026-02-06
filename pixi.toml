@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "embedding-server"
 version = "1.0.0"
 description = "A FastAPI-based service for generating text embeddings using Sentence Transformers"
@@ -10,7 +10,7 @@ start = "uvicorn main:app --host 0.0.0.0 --port 8111"
 dev = "uvicorn main:app --host 0.0.0.0 --port 8111 --reload"
 
 [dependencies]
-python = ">=3.10,<3.13"
+python = ">=3.10,<3.12"
 pip = "*"
 
 [pypi-dependencies]
