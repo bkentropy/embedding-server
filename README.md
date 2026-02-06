@@ -88,6 +88,10 @@ The service will be available at `http://localhost:8111`
    ```
 
 The service will be available through Nomad's service discovery at the configured port 8111.
+
 # Embedding Models
 
 ## The all-MiniLM-L6-v2
+https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
+Note that this is a 384 dimensional model.
