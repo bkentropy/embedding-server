@@ -19,8 +19,12 @@ A FastAPI-based service for generating text embeddings using Sentence Transforme
 
 ### Hitting an endpoint
 ```
+curl -X POST localhost:8111/embed -H "Content-Type: application/json" '{"texts": "this is a short sentence"}'
 curl -X POST localhost:8111/embed -d @example.json -H "Content-Type: application/json"
 curl -X POST localhost:8111/embed --json @example.json
+curl https://bkustra-anaconda-com-embedding-server.labs-internal.sb.anacondaconnect.com/health
+curl -X POST https://bkustra-anaconda-com-embedding-server.labs-internal.sb.anacondaconnect.com/embed -H "Content-Type: application/json" -d '{"texts": "this is a short sentence"}'
+curl -X POST https://bkustra-anaconda-com-embedding-server.labs-internal.sb.anacondaconnect.com/embed --json @example.json
 ```
 
 ## Running with Docker

@@ -43,6 +43,7 @@ async def get_embeddings(request: EmbeddingRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/")
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
